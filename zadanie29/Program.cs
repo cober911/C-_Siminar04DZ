@@ -2,6 +2,12 @@
  и выводит их на экран.
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
-
 ввод элеменетов через консоль (через запятую. использовать метод string.Split()) */
+
+Console.Write("Введите элементы массива:\t");
+int[] arr = Console.ReadLine().Split(',').Select(int.Parse).ToArray();
+var result = string.Join(", ", arr);
+Console.Write($"[{result}]");
+
+
 
